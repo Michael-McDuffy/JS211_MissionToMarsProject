@@ -10,7 +10,34 @@ const jobTypes = {
 };
 
 // Your code will go here
+class CrewMember {
+  constructor (name, job, specialSkill, ship) {
+    this.name = name;
+    this.job = job;
+    this.specialSkill = specialSkill;
+    this.ship = ship;
+  
+  }
+}
 
+
+class ship  {
+  constructor (name, type, ability) {
+    this.name = name;
+    this.type = type;
+    this.ability = ability;
+    this.crew = [];
+  
+  }
+}
+
+
+enterShip(ship)  {
+    this.ship = ship;
+    console.log(ship.crew)
+    console.log('THIS', this)
+    console.log('I AM HERE', ship)
+  }
 
 
 
