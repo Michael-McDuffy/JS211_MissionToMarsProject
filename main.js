@@ -1,3 +1,4 @@
+
 'use strict';
 const assert = require('assert');
 
@@ -32,11 +33,13 @@ class ship  {
 }
 
 
-enterShip(ship)  {
+enterShip (ship); {
     this.ship = ship;
+    this.crew = crew;
     console.log(ship.crew)
     console.log('THIS', this)
     console.log('I AM HERE', ship)
+    this.ship.crew.push(this)
   }
 
 
